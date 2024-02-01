@@ -11,25 +11,42 @@
 <body>
     <div class="canvas">
         <div class="gameBoy">
-            <div class="screen"></div>
-            <div class="titleText"></div>
-            <div class="weatherDisplay"></div>
-            <div class="joystick"></div>
+
+            <!-- screen -->
+            <div class="screen">
+                <div class="screenAnimation" id="startText">START</div>
+            </div>
+
+            <!-- text under screen -->
+            <div class="titleText"><br>
+                <h4>Nintendo GAME BOY ®</h4><br>
+            </div>
+
+            <!-- joystick -->
+            <div class="joystick_outerCircleShade"></div>
+            <div class="joystick_innerCircleShade"></div>
+
+            <!-- buttons -->
             <div class="buttons">
-                <div id="buttons_btnA"></div>
-                <div id="buttons_btnB"></div>
+                <!-- when clicked = displays start screen animation -->
+                <div class="animateMe">
+                    <input type="button" id="btnA" value="A"></input>
+                </div>
+                <input type="button" id="btnB" value="B"></input>
             </div>
         </div>
+    </div>
+    </div>
     </div>
 </body>
 
 </html>
 
-
+<script src="/gameboy.js"></script>
 
 
 
 <!-- 3D page flip: https://codehalweb.com/3d-portfolio-website/
     https://yosracodes.hashnode.dev/how-i-make-css-art
-
+https://www.w3schools.com/cssref/css3_pr_animation.php
 -->

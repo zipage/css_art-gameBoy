@@ -14,15 +14,144 @@
 }
 
 .gameBoy {
-    width: 55vmin;
-    height: 80vmin;
-    background: #e8e0ff;
+    width: 50vmin;
+    height: 85vmin;
+    background: rgb(200, 199, 199);
     border-radius: 20px;
     /* rounds all the corners in general */
-    border-bottom-right-radius: 160px;
+    border-bottom-right-radius: 130px;
     /* specificially rounds the bottom right */
+    border-right: 24px solid rgb(191, 184, 184);
+    /*creates the right side more 3D of the console*/
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.screen {
+    width: 30vmin;
+    height: 30vmin;
+    background-color: black;
+    margin-top: -50%;
+    border-radius: 8px;
+    /* rounds the corns of screen */
+    /* I could try and have an svg icon that plays a horizonal movings animation? */
+
+}
+
+#startText {
+    margin-top: 13%;
+}
+
+
+
+/* 
+@keyframes screen_animation {
+    from {
+        transform: translate(0px);
+    }
+
+    to {
+        transform: translate(15px);
+    }
+}
+*/
+
+.titleText {}
+
+/*
+.weatherDisplay {
+    width: 30vmin;
+    height: 10vmin;
+    background-color: green;
+    border-radius: 3px;
+    position: fixed;
+}
+*/
+.joystick_outerCircleShade {
+    width: 13vmin;
+    height: 13vmin;
+    background-color: rgb(40, 37, 37);
+    border-radius: 50%;
+    margin-left: -50%;
+    position: fixed;
+    /* this prevents all elements to move with the joystick */
+    margin-top: 40%;
+    margin-left: -25%;
+
+    /*
+    border-right: 4px solid grey;
+    border-left: 4px solid grey;
+    */
+}
+
+.joystick_innerCircleShade {
+    width: 10vmin;
+    height: 10vmin;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: -50%;
+    position: fixed;
+    /* this prevents all elements to move with the joystick */
+    margin-top: 40%;
+    margin-left: -25%;
+}
+
+
+.buttons {
+    position: fixed;
+}
+
+
+#btnA {
+    width: 7vmin;
+    height: 7vmin;
+    background-color: rgb(230, 15, 15);
+    border: 4px solid rgb(209, 109, 109);
+    border-radius: 50%;
+    position: fixed;
+    margin-top: 20%;
+    margin-left: 2%;
+}
+
+#btnB {
+    width: 7vmin;
+    height: 7vmin;
+    background-color: green;
+    border: 4px solid rgb(90, 228, 69);
+    border-radius: 50%;
+    position: fixed;
+    margin-top: 13%;
+    margin-left: 10%;
+}
+
+#startText {
+    position: absolute;
+    animation: linear infinite;
+    animation-name: animateMe;
+    animation-duration: 5s;
+    position: fixed;
+    width: 30vmin;
+}
+
+@keyframes animateMe {
+    0% {
+        left: 35%;
+        color: white;
+        font-weight: bold;
+    }
+
+    50% {
+        left: 52%;
+        color: white;
+        font-weight: bold;
+
+    }
+
+    100% {
+        left: 35%;
+        color: white;
+        font-weight: bold;
+    }
 }
