@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.canvas {
+    background: orange;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.gameBoy {
+    width: 55vmin;
+    height: 80vmin;
+    background: #e8e0ff;
+    border-radius: 20px;
+    /* rounds all the corners in general */
+    border-bottom-right-radius: 160px;
+    /* specificially rounds the bottom right */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
